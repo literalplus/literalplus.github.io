@@ -68,6 +68,38 @@
         <p>This section is not completed yet. You can check my website and look if it is completed there.</p>
       </div>
 	  
+	      <script src="js/jquery/jquery.tablesorter.min.js"></script>
+		<script>
+			$(function() {
+			$("table#sortTableExample").tablesorter({ sortList: [[1,0]] });
+			});
+		</script>
+    <table class="zebra-striped">
+    <thead>
+	<th>#</th>
+	<th class="yellow">
+	Project Name
+	</th>
+	<th class="blue">
+	Project Progress 
+	</th>
+	<th class="green">
+	Additional information
+	</th>
+	</thead>
+	<tbody>
+	
+	<tr>
+	<td>1</td>
+	<td>_xxyy</td>
+	<td>never end</td>
+	<td>Languages: PHP,MySQL,CSS</td>
+	</tr>
+	</tr>
+	
+	</tbody>
+    </table>
+	  
 	  </section>
 
       <footer>
