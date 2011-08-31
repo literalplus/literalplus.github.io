@@ -68,14 +68,16 @@
         <p>This section is not completed yet. You can check my website and look if it is completed there.</p>
       </div>
 	  
-	      <script src="js/jquery/jquery.tablesorter.min.js"></script>
+	  <script src="jquery-1.6.2.min.js"></script>
+	      <script src="jquery.tablesorter.min.js"></script>
 		<script>
 			$(function() {
-			$("table#sortTable").tablesorter({ sortList: [[1,0]] });
+			$("table#sortTable").tablesorter({ sortList: [[0,0]] });
 			});
 		</script>
     <table class="zebra-striped" id="sortTable">
     <thead>
+	<tr>
 	<th>#</th>
 	<th class="yellow">
 	Project Name
@@ -86,6 +88,7 @@
 	<th class="green">
 	Additional information
 	</th>
+	</tr>
 	</thead>
 	<tbody>
 	
