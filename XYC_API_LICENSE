@@ -1,0 +1,27 @@
+XYC API - xxyy's common bukkit libary application programming interface.
+
+These files (for example, but not limited to: A JAR containing compiled XYC classes, Java .class files containing the compiled API,
+  Java .java files containing the API sources) were created by xxyy98 (Philipp Nowak, http://xxyy.github.io/) (further referred to as "me").
+Please provide proper credit in any application using this API
+   (At a place accessible and noticeable to the public, using the following: "This application is utilizing the XYC API by xxyy (http://xxyy.github.io/)."
+The API version is not intended to be run on a server and is only provided for your conveniece.
+
+THESE FILES (AND PARTS OF THEM) ARE NOT INTENDED TO BE DISTRIBUTED BY ANYONE BUT ME.
+IF YOU DID RECEIVE THEM FROM ANYONE BUT ME PLEASE IMMEDIATELY DELETE THEM AND CONTACT ME.
+IF YOU GOT THEM FROM ME, HOWEVER, YOU ARE GRANTED SINGLE-USER, AT ANY TIME REVOKABLE BY ME, NON-COMMERCIAL
+USAGE FOR THE PUPROSE OF DEVELOPING APPLICATIONS USING THE API OR PARTS OF IT.
+If you got xy_common Implementation (craftcommon) or xy_common Bukkit (bukkithook) (or parts of them), you ARE GOING TO NEED
+EXPLICIT WRITTEN PERMISSION FROM ME IN ORDER TO USE AND/OR KEEP THEM!
+
+
+You MAY:
+* Access the API classes and methods from your non-commercial applications (permission is revokable at ANY TIME)
+* Distribute applications using the API (not the API itself) to third parties permitted (by me!)
+    to use xy_common Implementation AND xy_common Bukkit AND xy_common API (Permission can only be obtained from me)
+You MAY NOT:
+* Distribute the API or parts of the API
+* Make money from any application using the API or parts of the API
+* Tell others you made the API (because you did not)
+* Distribute applications (at least not the parts using the API) to third parties not permitted to use xy_common Implementation or xy_common Bukkit or xy_common API.
+
+NOTICE: This license can change at any time, so please check it every time you obtain a new version of the API.
