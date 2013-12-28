@@ -1,3 +1,15 @@
 body{
-padding-top: 40px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: Helvetica Neue, Calibri, Tahoma;
+    background-color: #cccccc;
+    font-size: 1.75em;
+}
+
+.small{
+    font-size: 0.5em;
+}
+
+.green{
+    color: green;
 }
