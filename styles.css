@@ -3,7 +3,18 @@ body{
     text-align: center;
     font-family: Helvetica Neue, Calibri, Tahoma;
     background-color: #cccccc;
-    font-size: 1.75em;
+    font-size: 3em;
+    color: #000000;
+}
+
+h1{
+    font-size: 10em;
+}
+
+.doge {
+    position: absolute;
+    font-family: Comic Sans MS;
+    font-size: 42px;
 }
 
 .small{
@@ -12,4 +23,8 @@ body{
 
 .green{
     color: green;
+}
+
+a:hover{
+    text-decoration: none;
 }
