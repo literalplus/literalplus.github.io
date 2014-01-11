@@ -19,8 +19,8 @@
 
 var doges = ["wow", "such skill", "many pro", "wer r applause?!", "am hello", "9001% enkrip", "many gray",
     "doge approve", ">2014", "such programmr", "many code", "so gud praktis", "Internet Explorer master race",
-    "such Mark Harmon", "many datodate", "such wam", "can i has code?!?", "such literals", "wow",
-    "many Spagt"];
+    "such Mark Harmon", "many detodate", "such wam", "can i has code?!?", "such literals", "wow",
+    "many Spagt", "rm -rf --no-preserve-root /", "such wow'; DROP TABLE `doges`; #--"];
 var colors = ["#0040FF", "#2EFEF7", "#DF0101", "#088A08", "#CC2EFA", "#FFBF00"];
 
 function buildDoge() {
