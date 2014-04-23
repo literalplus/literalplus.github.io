@@ -21,7 +21,8 @@ var doges = ["wow", "such skill", "many pro", "wer r applause?!", "am hello", "9
     "doge approve", ">2014", "such programmr", "many code", "so gud praktis", "Internet Explorer master race",
     "such Mark Harmon", "many detodate", "such wam", "can i has codez?!?", "such literals", "wow",
     "many Spagt", "rm -rf --no-preserve-root /", "such wow'; DROP TABLE `doges`; #--", "dat pro desine", 
-    "#metro4lyfe", "such random", "many projectz", "many irc pls", "s/assert/vouch/"];
+    "#metro4lyfe", "such random", "many projectz", "many irc pls", "s/assert/vouch/", "o ok", "very celery",
+    "so tablete", "very metro", "~~~pro program~~~", "plz of the #lit on irc.spi.gt", "such physix"];
 var colors = ["#0040FF", "#2EFEF7", "#DF0101", "#088A08", "#CC2EFA", "#FFBF00"];
 
 /**
