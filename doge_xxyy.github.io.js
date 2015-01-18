@@ -1,6 +1,6 @@
 /*
  Doge.js (Get your own at https://github.com/xxyy/doge.js/)
- Copyright (C) 2014 Philipp Nowak / xxyy (xxyy.github.io)
+ Copyright (C) 2014 - 2015 Philipp Nowak / xxyy (xxyy.github.io)
 
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License
@@ -18,11 +18,12 @@
  */
 
 var doges = ["wow", "such skill", "many pro", "wer r applause?!", "am hello", "9001% enkrip", "many gray",
-    "doge approve", ">2014", "such programmr", "many code", "so gud praktis", "Internet Explorer master race",
+    "doge approve", ">2015", "such programmr", "many code", "so gud praktis", "Internet Explorer master race",
     "such Mark Harmon", "many detodate", "such wam", "can i has codez?!?", "such literals", "wow",
     "many Spagt", "rm -rf --no-preserve-root /", "such wow'; DROP TABLE `doges`; #--", "dat pro desine", 
     "#metro4lyfe", "such random", "many projectz", "many irc pls", "s/assert/vouch/", "o ok", "very celery",
-    "so tablete", "very metro", "~~~pro program~~~", "plz of the #lit on irc.spi.gt", "such physix", "im aktuli batman"];
+    "so tablete", "very metro", "~~~pro program~~~", "plz of the #lit on irc.spi.gt", "such physix", "im aktuli batman",
+    "enter lynyx", "so arch", "many git", "such twitr addict", "very messed-up sleep schedule", "amaze"];
 var colors = ["#0040FF", "#2EFEF7", "#DF0101", "#088A08", "#CC2EFA", "#FFBF00"];
 
 /**
