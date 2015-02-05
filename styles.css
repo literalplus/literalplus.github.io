@@ -25,6 +25,14 @@ h1{
     color: green;
 }
 
+.link-list {
+    list-style-type: none;
+}
+
+.link-list li:before {
+    content: "- ";
+}
+
 a:hover{
     text-decoration: none;
 }
