@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/literallie
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://xxyy.github.io
+  * I am literallie (https://keybase.io/literallie) on keybase.
+  * I have a public key with fingerprint 395B A452 45A9 8A3F BA03  6FF3 7BE4 63C9 02ED 152C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "395ba45245a98a3fba036ff37be463c902ed152c",
+            "host": "keybase.io",
+            "key_id": "7be463c902ed152c",
+            "kid": "0101b72d8359293fdca32083a4eadbde7145ee2d0afb77f161ff6ed2b53133aa6a640a",
+            "uid": "3077967b8d852bbf034a8aed12871e19",
+            "username": "literallie"
+        },
+        "service": {
+            "hostname": "xxyy.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1426204862,
+    "expire_in": 157680000,
+    "prev": "059645155bbf808dab2cd5fc5cd541bfd738116f2affaceb40dd0a2dca72dff3",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMM6AnicbVJ/TFNXFC5YCJLpCAwBA04eIyABfL/fa5GNOJAt3TBERXFk9b6+++iT
+0tbXV6RhZhDnJkNRCJCNERqCYUGBbVmJU0dBQoKEbYhss6vEaHBjIWMCmynMAXuP
+uf92/7g395zvfOd+3z0jWzZpwoOqHpnGguej04PGb+Y5NYeCU71VCGfjXYi+CimD
+G4cgWkuhZJdEq4zoEUJHcYCkcJICOhYQAgdQghYEguEgSRMmHYpDHqNwE5KOmG0O
+tUKh4YADZoo2JaZcjCKvRP8HX7aRQDEU4xicZwlKh+sIgTcBAkdZApAQ8BwPGYyk
+IMR5FAgcwwgYjQkCDXmcowiMIACgAU2iQKFzbtARKMPoaIZjeZbCOU5ACRKwQOmJ
+swwGMZ0KdEDJCsqhgraIMpSAxSJC5FQ6osQrRBNUTVC1PMNUVrpcmaWibHZy/2qy
+SzbZZrJZlJxZlu0OvVoru+wq+CTkjM9ojJxo5RUvlYoKKDlEmxXRYwrSJIsqL0bi
+NI6SLI2nI7DSLkrQKKoIiqFZVFlqH1ihGkTpaJLCKEpRw6IsDzjcxFOCiVJ2EuME
+niFYDKMFHAgCMEGORHnFLFzxUXFV+SlEFXbCakP0tPJMUKpQOsRSK5CdkqJ6+GaJ
+VhMUrgkNCVanQRO+OeK/GZk1Rmi6Wq/1hMXcS/Este34Y0xb8FHavkuHdAO+e5H7
+pxpa94EELzl6K/eVJudLR0se64tu7/XsenTR5R18NfH9ne2xxNSJj+2bM8zQnV1m
+mPcVN10d9096hmuSdxhWteOi53roRPtyXMS848JYkybmRktD7wST92F8gvinwfee
+57ZX4w50a3PeuLpYHOh+KJ22FWiN0zX1354cPZrw+eyvqYXnz7rN7SBqPiKsIXMC
+rCRFrYf2nut78cgA2LOwxdxWW1ybs4QXYeid1Pq+U3Vbu3f+0pr4c7Ixf2n0cpZ4
+/coHgW2uL3PvgqXkFf+V1ez8vlj6q1zv9sfGoW2D3z+fWRc/aTnOudcSVo7N/XbX
+912jf7qjbEh6GhtX3iAvv93vr+kPjV1oDGsq6Sx2RHccj4cZlHZs+qn7a6mxJ22g
+PGLUkDJd6kr69K+pi8Wdu/fXwdRaT6ivCz04VThqMIcsc1/MxoykJSfOVffGi29m
+7I7MvvT7SIixYISu+fGToecMHoEunNO9/iBJvPNw7fzZtpnTR9L+jsz9qWPR1YJe
+plqi1v0HnvAHr419tvbEUkQH9PX5LySc2zMYJxyuzym4/5Zzb/PydNb6rkD0grw2
+mxNzq+v+N9S78VPDPZPH6DPNi4btB/wp70S/drhzRQz0V4+gvpmsB97m1TN1Wzf9
+kNc38/KN6n8ASNGu7g==
+=QenD
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/literallie
+
+==================================================================
