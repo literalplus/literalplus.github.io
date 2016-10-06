@@ -1,38 +1,107 @@
-body{
-    padding-top: 40px;
+:root, body {
+    height: 100%;
+}
+
+body {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    font-size: 130%;
+}
+
+.wrapper-for {
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    display: table; /* this is fine.gif */
+}
+
+.an-intermediate {
+    background-color: darkgrey;
+}
+
+.inner-container {
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    display: table-cell;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+.inner-content, .inner-footer, .inner-header {
+    margin: auto;
     text-align: center;
-    /*font-family: Helvetica Neue, Calibri, Tahoma;*/
-    background-color: #cccccc;
-    font-size: 3em;
-    color: #000000;
 }
 
-h1{
-    font-size: 4.2em;
+.inner-content p {
+    font-size: 200%;
 }
 
-.doge {
-    position: absolute;
-    font-family: "Comic Sans MS", TSCu_Comic;
-    font-size: 42px;
+.inner-content .lead {
+    font-size: 220%;
 }
 
-.small{
-    font-size: 0.5em;
+.inner-content h1 {
+    font-size: 400%;
 }
 
-.green{
-    color: green;
+#landing {
+    background-image: url('pics/landing.jpg');
+    color: whitesmoke;
 }
 
-.link-list {
-    list-style-type: none;
+.main-nav-wrapper {
+    margin-top: 5%;
 }
 
-.link-list li:before {
-    content: "- ";
+.main-nav {
+    float: right;
+    font-size: 120%;
 }
 
-a:hover{
-    text-decoration: none;
+.main-nav > li {
+    display: inline-block;
+}
+
+.main-nav > li + li {
+    margin-left: 20px;
+}
+
+.main-nav > li > a {
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: bold;
+    color: #fff;
+    color: rgba(255,255,255,.75);
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav > li > a:hover,
+.main-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.25);
+}
+
+.main-nav > li.active > a {
+    color: white;
+    border-bottom-color: white;
+}
+
+@media (min-width: 768px) {
+    /* Keep content a little less wide on wider screens to make it seem roomier */
+    .inner-content, .inner-footer, .inner-header {
+        width: 60%;
+    }
+
+    .inner-footer, .inner-header {
+        position: relative;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .inner-footer {
+        bottom: 0;
+    }
+
+    .inner-header {
+        top: 0;
+    }
 }
