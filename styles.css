@@ -113,7 +113,9 @@ p {
   screen definitions
 ***/
 
+/*noinspection CssOptimizeSimilarProperties*/
 #landing {
+    background-color: #91a7cb; /* make loading a little smoother on mobile */
     background-image: url('pics/landing.jpg');
     color: whitesmoke;
 }
