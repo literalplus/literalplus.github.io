@@ -24,7 +24,7 @@ body {
 }
 
 .outer-container {
-display: table; /* this is fine.gif */
+    display: table; /* this is fine.gif */
 }
 
 
@@ -37,18 +37,6 @@ display: table; /* this is fine.gif */
 .inner-content, .inner-footer, .inner-header {
     margin: auto;
     text-align: center;
-}
-
-p {
-    font-size: 200%;
-}
-
-.lead {
-    font-size: 220%;
-}
-
-h1 {
-    font-size: 400%;
 }
 
 .fixed-screen {
@@ -147,5 +135,18 @@ h1 {
 
     .inner-header {
         top: 0;
+    }
+
+    /* Increase font sizes since we have a lot more space on wider screens */
+    p {
+        font-size: 200%;
+    }
+
+    .lead {
+        font-size: 220%;
+    }
+
+    h1 {
+        font-size: 400%;
     }
 }
