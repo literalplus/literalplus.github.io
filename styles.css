@@ -240,7 +240,7 @@ p {
     }
 
     .cyber:hover {
-        background-image: url('https://cyber.equipment/cyber_plain.png');
+        background-image: url('pics/cyber_plain.png');
 	background-size: contain;
 	color: transparent;
 	text-shadow: none;

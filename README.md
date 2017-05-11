@@ -34,4 +34,5 @@ Pictures: (`pics/` directory)
  * `cover.jpg`, `cover_orig.jpg`, `landing.jpg` - 
    I took these myself ([CC0](https://creativecommons.org/publicdomain/zero/1.0/))
  * `c1.jpg` - Cropped version of [this](https://skitterphoto.com/photos/528/birds-in-orange)
-   image by Rudy van der Veen at skitterphoto.
+   public domain image by Rudy van der Veen at skitterphoto.
+ * `cyber_plain.png` - [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) Cyber picture by <a href="https://cyber.equipment/">fnordeingang e.V.</a> (If you need cyber, they got cyber, can recommend, already got ~120m of cyber there)
