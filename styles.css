@@ -109,6 +109,7 @@ p {
     position: absolute;
     top: 5%;
     right: 20%;
+    z-index: 1; /* hidden behind cover image otherwise */
 }
 
 .main-nav-wrapper {
