@@ -238,6 +238,16 @@ p {
     .social {
         font-size: 200%;
     }
+
+    .cyber:hover {
+        background-image: url('https://cyber.equipment/cyber_plain.png');
+	background-size: contain;
+	color: transparent;
+	text-shadow: none;
+	display: inline-block;
+	width: 3.3em;
+	height: 1.2em;
+    }
 }
 
 @media screen and (orientation:landscape) {
