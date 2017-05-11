@@ -1,38 +1,247 @@
-body{
-    padding-top: 40px;
-    text-align: center;
-    /*font-family: Helvetica Neue, Calibri, Tahoma;*/
-    background-color: #cccccc;
-    font-size: 3em;
-    color: #000000;
+:root, body {
+    height: 100%;
 }
 
-h1{
-    font-size: 4.2em;
+body {
+    font-size: 130%;
 }
 
-.doge {
-    position: absolute;
-    font-family: "Comic Sans MS", TSCu_Comic;
-    font-size: 42px;
+.shadowed {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
-.small{
-    font-size: 0.5em;
+p {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-.green{
-    color: green;
+/* we need this to reserve the height the fixed content takes and so that the next page is not placed in front of it */
+.fixed-wrapper {
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-.link-list {
-    list-style-type: none;
+.cyberpage {
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    display: table; /* this is fine.gif */
+    position: relative; /* this makes the pages appear in front of the fixed background (yes) https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ */
 }
 
-.link-list li:before {
-    content: "- ";
+#what-i-do-wrapper {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff7+0,ffffff+100 */
+    background: #fcfff7; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #fcfff7 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #fcfff7 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #fcfff7 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff7', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-a:hover{
+/*noinspection CssOptimizeSimilarProperties*/
+#where-to-find-wrapper {
+    background-size: cover;
+    background-color: #f0a001;
+    background-image: url('pics/c1.jpg');
+    color: black;
+}
+
+.social {
+    font-size: 150%;
+    display: inline-block;
+    text-align: left;
+    width: 50%; /* this makes them not be next to each other on mobile */
+}
+
+.social .fa-ul {
+    margin-bottom: 0;
+}
+
+.social .fa-ul li {
+    line-height: 2.5em; /* centers text vertically relative to the icons for some reason (this is accepted practice according to SO) */
+}
+
+.social a {
+    color: black;
+}
+
+.social a:hover {
+    color: darkslategray;
     text-decoration: none;
+}
+
+.outer-container {
+    display: table; /* this is fine.gif */
+    width: 100%;
+    height: 100%;
+}
+
+.inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+.inner-content, .inner-footer, .inner-header {
+    margin: auto;
+    text-align: center;
+}
+
+.inner-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.fixed-screen {
+    position: fixed;
+    min-height: 100%;
+    height: 100%; /* Mobile Firefox needs this */
+}
+
+/***
+  main navbar
+***/
+
+.main-header {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+}
+
+.main-nav-wrapper {
+    margin-top: 5%;
+}
+
+.main-nav {
+    float: right;
+    font-size: 120%;
+}
+
+.main-nav > li {
+    display: inline-block;
+}
+
+.main-nav > li + li {
+    margin-left: 20px;
+}
+
+.main-nav > li > a {
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: bold;
+    color: #fff;
+    color: rgba(255,255,255,.75);
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav > li > a:hover,
+.main-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.25);
+}
+
+.main-nav > li.active > a {
+    color: white;
+    border-bottom-color: white;
+}
+
+.scroll-hint {
+    color: whitesmoke;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 8em; /* have to use something constant here because % is different for margin */
+    margin-top: -8em;
+    text-align: center;
+}
+
+.source-hint {
+    color: whitesmoke;
+    position: relative;
+    font-size: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 6em; /* have to use something constant here because % is different for margin */
+    margin-top: -6em;
+    text-align: center;
+}
+
+.source-hint a {
+    color: white;
+}
+
+.source-hint p {
+    margin: 0;
+}
+
+.source-hint a:hover {
+    color: darkgrey;
+}
+
+.fire-emoji {
+    height: 0.7em;
+}
+
+/***
+  screen definitions
+***/
+
+/*noinspection CssOptimizeSimilarProperties*/
+#landing {
+    background-color: #91a7cb; /* make loading a little smoother on mobile */
+    background-image: url('pics/cover.jpg');
+    color: whitesmoke;
+}
+
+/***
+  media queries
+***/
+
+@media (min-width: 768px) {
+    /* Keep content a little less wide on wider screens to make it seem roomier */
+    .inner-content, .inner-footer, .inner-header {
+        width: 60%;
+    }
+
+    .inner-footer, .inner-header {
+        position: relative;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .inner-footer {
+        bottom: 0;
+    }
+
+    .inner-header {
+        top: 0;
+    }
+
+    /* Increase font sizes since we have a lot more space on wider screens */
+    p {
+        font-size: 200%;
+    }
+
+    .lead, .inner-content p {
+        font-size: 220%;
+    }
+
+    h1 {
+        font-size: 400%;
+    }
+
+    .right-social {
+        margin-left: 2.5em;
+    }
+
+    .social {
+        display: inline-block;
+        width: auto;
+        font-size: 200%;
+        vertical-align: top; /* if both lists have different amounts of items */
+    }
 }
