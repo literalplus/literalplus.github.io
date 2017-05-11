@@ -235,14 +235,19 @@ p {
         font-size: 400%;
     }
 
+    .social {
+        font-size: 200%;
+    }
+}
+
+@media screen and (orientation:landscape) {
     .right-social {
         margin-left: 2.5em;
     }
 
     .social {
         display: inline-block;
-        width: auto;
-        font-size: 200%;
-        vertical-align: top; /* if both lists have different amounts of items */
+	width: auto;
+	vertical-align: top; /* If the lists have different amounts of items */
     }
 }
