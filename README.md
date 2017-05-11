@@ -6,11 +6,15 @@ Welcome to the future! This is my very own personal website.
 It features amazing properties, and has been described using, including, but not limited to:
 
  * lit
+ * 🔥
  * awesome
  * new
  * shiny
  * modern
  * wow
+ * 🔥🔥🔥
+ * responsive
+ * cyber
  * unbelievable
  * ^C
 
