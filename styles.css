@@ -242,11 +242,11 @@ p {
     .cyber:hover {
         background-image: url('pics/cyber_plain.png');
 	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	color: transparent;
 	text-shadow: none;
 	display: inline-block;
-	width: 3.3em;
-	height: 1.2em;
     }
 }
 
