@@ -20,6 +20,18 @@ It features amazing properties, and has been described using, including, but not
 
 https://l1t.li/
 
+Satisfied Customer Reviews
+==========================
+
+"It's so... cyber. 🤣"
+— [Jens Wiechers](https://twitter.com/jwiechers/status/1002720712048742403)
+
+"needs more cyber"
+— [@nilsding](https://twitter.com/nilsding/status/862775336261607424)
+
+"cool 😎"
+— [@DerVonDenBergen](https://twitter.com/DerVonDenBergen/status/862777956250390530)
+
 License
 ========
 
