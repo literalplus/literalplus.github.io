@@ -1,5 +1,5 @@
-xxyy.github.io
-===============
+literalplus.github.io
+=====================
 
 Welcome to the future! This is my very own personal website. 
 
@@ -18,7 +18,7 @@ It features amazing properties, and has been described using, including, but not
  * unbelievable
  * ^C
 
-https://l1t.li/
+https://lit.plus/
 
 Satisfied Customer Reviews
 ==========================
