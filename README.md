@@ -32,6 +32,9 @@ Satisfied Customer Reviews
 "cool 😎"
 — [@DerVonDenBergen](https://twitter.com/DerVonDenBergen/status/862777956250390530)
 
+"n1 💪"
+- [@GoTeufelchen](https://twitter.com/go_teufelchen)
+
 License
 ========
 
