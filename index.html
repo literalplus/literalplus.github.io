@@ -21,41 +21,38 @@
 <body>
 <div class="fixed-wrapper shadowed">
   <a id="top"></a>
-  <div class="main-header clearfix">
-    <nav class="main-nav-wrapper">
-      <ul class="nav main-nav">
-        <li class="active"><a href="#top">Top</a></li>
-        <li><a href="#contact-me">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
   <div class="outer-container fixed-screen">
-    <div id="landing" class="inner-container">
-      <div class="inner-content">
-        <h1>
-          <a href="https://github.com/googlei18n/noto-emoji/"
-             title="fire emoji to indicate how lit i am courtesy of Google Noto">
-            <img src="https://raw.githubusercontent.com/googlei18n/noto-emoji/master/png/128/emoji_u1f525.png"
-                 class="fire-emoji" alt="fire emoji"></a>
-          literalplus
-          <a href="https://github.com/googlei18n/noto-emoji/"
-             title="fire emoji to indicate how lit i am courtesy of Google Noto">
-            <img src="https://raw.githubusercontent.com/googlei18n/noto-emoji/master/png/128/emoji_u1f525.png"
-                 class="fire-emoji" alt="fire emoji"></a>
-        </h1>
-        <p class="lead">
-          Welcome to my <span class="cyber">cyber</span>place in <span class="cyber">cyber</span>space.
-          <!--Since everybody is doing this cybersite thing, here's mine.-->
-          Since you might not want to <span class="cyber">cyber</span>dig all my tweets to get to know me, here's a
-          <span class="cyber">cyber</span>site with all the most important <span class="cyber">cyber</span>facts.
-          <!--Obviously there's more cyber to me than can be expressed
-          in a single cyberscreen, so I have divided it into cybersections.-->
-        </p>
-      </div>
-    </div>
+    <!-- fixed background image for parallax effect -->
+    <div id="landing" class="inner-container"></div>
   </div>
 </div>
-<div class="scroll-hint shadowed" onclick="scrollToPage('what-i-do')">
+<div class="parallax-wrapper" onclick="scrollToSelector('#parallax-top')">
+  <a id="parallax-top"></a>
+  <div class="inner-content parallax parallax-fast">
+    <h1>
+      <a href="https://github.com/googlei18n/noto-emoji/"
+         title="fire emoji to indicate how lit i am courtesy of Google Noto">
+        <img src="https://raw.githubusercontent.com/googlei18n/noto-emoji/master/png/128/emoji_u1f525.png"
+             class="fire-emoji" alt="fire emoji"></a>
+      literalplus
+      <a href="https://github.com/googlei18n/noto-emoji/"
+         title="fire emoji to indicate how lit i am courtesy of Google Noto">
+        <img src="https://raw.githubusercontent.com/googlei18n/noto-emoji/master/png/128/emoji_u1f525.png"
+             class="fire-emoji" alt="fire emoji"></a>
+    </h1>
+  </div>
+  <div class="inner-content parallax parallax-slow">
+    <p class="lead">
+      Welcome to my <span class="cyber">cyber</span>place in <span class="cyber">cyber</span>space.
+      <!--Since everybody is doing this cybersite thing, here's mine.-->
+      Since you might not want to <span class="cyber">cyber</span>dig all my tweets to get to know me, here's a
+      <span class="cyber">cyber</span>site with all the most important <span class="cyber">cyber</span>facts.
+      <!--Obviously there's more cyber to me than can be expressed
+      in a single cyberscreen, so I have divided it into cybersections.-->
+    </p>
+  </div>
+</div>
+<div class="scroll-hint shadowed" onclick="scrollToSelector('#what-i-do-wrapper')">
   <p>Scroll down to see more</p>
   <p class="glyphicon glyphicon-menu-down"></p>
 </div>
@@ -99,7 +96,7 @@
     </div>
   </div>
 </div>
-<div class="scroll-hint scroll-hint-inverted shadowed" onclick="scrollToPage('where-to-find')">
+<div class="scroll-hint scroll-hint-inverted shadowed" onclick="scrollToSelector('#where-to-find-wrapper')">
   <p class="glyphicon glyphicon-menu-down"></p>
 </div>
 <div class="cyberpage shadowed" id="where-to-find-wrapper">

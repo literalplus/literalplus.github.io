@@ -1,5 +1,5 @@
-function scrollToPage(name) {
-    const el = document.querySelector('#' + name + '-wrapper');
+function scrollToSelector(selector) {
+    const el = document.querySelector(selector);
     el.scrollIntoView({behavior: 'smooth'});
 }
 
