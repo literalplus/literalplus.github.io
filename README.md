@@ -35,18 +35,23 @@ Satisfied Customer Reviews
 "n1 💪"
 — [@GoTeufelchen](https://twitter.com/go_teufelchen)
 
+pls send me ur reviews on Twitter to be included here 💖
+
 License
 ========
 
 The code in this repository is licensed under the MIT License.
 Find details in the `LICENSE` file.
  
-The files located in the `fontawesome/` directory
+The files located in the `fontawesome-free-5.15.1-web/` directory
 are part of Font Awesome, whose license may be found
 at http://fontawesome.io/license/. They have to be
 included that way since their CDN requires JavaScript
 which I won't make a requirement for this website
 for a font.
+
+The fonts from the `fonts/` library are governed by their
+respective, included, licenses.
 
 Pictures: (`pics/` directory)
 
@@ -57,3 +62,5 @@ Pictures: (`pics/` directory)
  * `cyber_plain.png` - [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) Cyber picture by <a href="https://cyber.equipment/">fnordeingang e.V.</a> (If you need cyber, they got cyber, can recommend, already got ~120m of cyber there)
 
 The fire emoji next to my name are taken from <a href="https://github.com/googlei18n/noto-emoji">Google's Noto Emoji font</a> and licensed under the <a href="https://github.com/googlei18n/noto-emoji#license">Apache License</a>.
+
+All trademarks belong to their respective owners.

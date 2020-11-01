@@ -4,6 +4,7 @@
 
 body {
     font-size: 130%;
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .shadowed {
@@ -13,6 +14,20 @@ body {
 p {
     margin-left: 1em;
     margin-right: 1em;
+}
+
+h1 {
+    font-family: 'Acme', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.at {
+    /* the @ symbol looks very weird in Cabin, Acme looks similar enough */
+    font-family: 'Acme', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 2px;
+    margin-right: 1px;
+    margin-left: 1px;
 }
 
 /* we need this to reserve the height the fixed content takes and so that the next page is not placed in front of it */
@@ -118,7 +133,7 @@ p {
 
 .main-nav {
     float: right;
-    font-size: 120%;
+    font-size: 1.8em;
 }
 
 .main-nav > li {
@@ -160,6 +175,10 @@ p {
     text-align: center;
 }
 
+.scroll-hint-inverted {
+    color: unset;
+}
+
 .source-hint {
     color: whitesmoke;
     position: relative;
@@ -187,6 +206,10 @@ p {
     height: 0.7em;
 }
 
+.click-hint:hover {
+    cursor: pointer;
+}
+
 /***
   screen definitions
 ***/
@@ -197,6 +220,20 @@ p {
     background-image: url('pics/cover.jpg');
     color: whitesmoke;
 }
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('fonts/Cabin/Cabin-VariableFont_wdth,wght.ttf');
+    font-weight: 100 1000;
+    font-stretch: 15% 151%;
+}
+
+@font-face {
+    font-family: 'Acme';
+    src: url('fonts/Acme/Acme-Regular.ttf');
+    font-weight: 400;
+}
+
 
 /***
   media queries

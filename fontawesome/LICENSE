@@ -1,5 +1,0 @@
-The files in this directory are part of Font Awesome, which does provide a CDN service,
-but that requires JavaScript, sadly. Because the site should be accessible without
-JavaScript, we need to host them here ourselves.
-
-The license for these files can be found at http://fontawesome.io/license/.
