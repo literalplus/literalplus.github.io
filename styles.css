@@ -88,6 +88,10 @@ h1 {
     text-decoration: none;
 }
 
+.hide {
+    display: none;
+}
+
 .outer-container {
     display: table; /* this is fine.gif */
     width: 100%;
