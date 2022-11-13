@@ -7,6 +7,10 @@ body {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+img {
+    vertical-align: unset; /* WTF Bootstrap! This breaks alignment of the fire emoji in <h1> */
+}
+
 .shadowed {
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
@@ -16,7 +20,7 @@ p {
     margin-right: 1em;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Acme', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -159,7 +163,11 @@ h1 {
 }
 
 .fire-emoji {
-    height: 0.7em;
+    height: 40px;
+    width: 40px;
+    image-rendering: crisp-edges; /* thanks to the mysterious donor of this line!
+                                   (it doesn't really do anything any more with 
+                                   the pre-scaled image but we keep it for decoration) */
 }
 
 .click-hint:hover {
@@ -265,7 +273,7 @@ h1 {
         font-size: 220%;
     }
 
-    h1 {
+    h1, h2 {
         font-size: 400%;
     }
 
@@ -275,11 +283,11 @@ h1 {
 
     .cyber:hover {
         background-image: url('pics/cyber_plain.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	color: transparent;
-	text-shadow: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: transparent;
+        text-shadow: none;
     }
 }
 
@@ -290,8 +298,8 @@ h1 {
 
     .social {
         display: inline-block;
-	width: auto;
-	vertical-align: top; /* If the lists have different amounts of items */
+        width: auto;
+        vertical-align: top; /* If the lists have different amounts of items */
     }
 }
 

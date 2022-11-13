@@ -61,5 +61,6 @@ Pictures: (`pics/` directory)
    public domain image by Rudy van der Veen at skitterphoto.
  * `cyber_plain.png` - [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) Cyber picture by <a href="https://cyber.equipment/">fnordeingang e.V.</a> (If you need cyber, they got cyber, can recommend, already got ~120m of cyber there)
  * `emoji_u1f525.png` - Fire emoji from [Google Noto Emoji](https://github.com/googlefonts/noto-emoji), licensed under the [Apache License](https://github.com/googlefonts/noto-emoji#license)
+ * `emoji_u1f525.png` - that picture, scaled to 40x40px to prevent blurry and inconsistent scaling between browsers. (`image-rendering: crisp-edges;` somewhat works but still doesn't look quite as nice)
 
 All trademarks belong to their respective owners.
