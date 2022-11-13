@@ -1,46 +1,96 @@
+/* #region General Overrides */
+* {
+    box-sizing: border-box;
+}
+*::before, *::after {
+    box-sizing: border-box;
+}
+
 :root, body {
     height: 100%;
+    font-size: 10px;
 }
 
 body {
+    color: #333;
+    line-height: 1.42857143; /* idk why this odd value but Bootstrap uses it */
     font-size: 130%;
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-img {
-    vertical-align: unset; /* WTF Bootstrap! This breaks alignment of the fire emoji in <h1> */
-}
-
-.shadowed {
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-}
-
 p {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 0 1em;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #23527c;
+    text-decoration: underline;
 }
 
 h1, h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.1;
     font-family: 'Acme', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.at {
-    /* the @ symbol looks very weird in Cabin, Acme looks similar enough */
-    font-family: 'Acme', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 0.8em;
-    position: relative;
-    bottom: 2px;
-    margin-right: 1px;
-    margin-left: 1px;
+h1, h2, p {
+    margin-bottom: 10px;
 }
 
-/* we need this to reserve the height the fixed content takes and so that the next page is not placed in front of it */
+@font-face {
+    font-family: 'Cabin';
+    src: url('fonts/Cabin/Cabin-VariableFont_wdth,wght.ttf');
+    font-weight: 100 1000;
+    font-stretch: 15% 151%;
+}
+
+@font-face {
+    font-family: 'Acme';
+    src: url('fonts/Acme/Acme-Regular.ttf');
+    font-weight: 400;
+}
+
+/* #endregion */
+/* #region Shared Layout */
+
+/* Display static (i.e. not moving) background cover image w/o interfering with flow */
 .fixed-wrapper {
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
     min-height: 100%;
     width: 100%;
     height: 100%;
+    position: fixed; /* -> takes up no space in flow */
+}
+.fixed-screen {
+    display: table; /* this is fine.gif */
+    width: 100%;
+
     position: fixed;
+    min-height: 100%;
+    height: 100%; /* Mobile Firefox needs this */
+}
+
+.inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+.inner-content, .inner-footer, .inner-header {
+    margin: auto;
+    text-align: center;
+}
+.inner-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 .cyberpage {
@@ -51,6 +101,38 @@ h1, h2 {
     position: relative; /* this makes the pages appear in front of the fixed background (yes) https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ */
 }
 
+.scroll-hint {
+    color: whitesmoke;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 8em; /* have to use something constant here because % is different for margin */
+    margin-top: -8em;
+    text-align: center;
+    cursor: pointer;
+}
+.scroll-hint i {
+    margin-bottom: 10px;
+}
+.scroll-hint-inverted {
+    color: unset;
+}
+
+/* #endregion */
+/* #region Page 0: Intro */
+
+
+.fire-emoji {
+    height: 40px;
+    width: 40px;
+    image-rendering: crisp-edges; /* thanks to the mysterious donor of this line!
+                                   (it doesn't really do anything any more with 
+                                   the pre-scaled image but we keep it for decoration) */
+}
+
+/* #endregion */
+/* #region Screen 1: What I Do */
+
 #what-i-do-wrapper {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff7+0,ffffff+100 */
     background: #fcfff7; /* Old browsers */
@@ -59,6 +141,16 @@ h1, h2 {
     background: linear-gradient(135deg, #fcfff7 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff7', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+/*noinspection CssOptimizeSimilarProperties*/
+#landing {
+    background-color: #91a7cb; /* make loading a little smoother on mobile */
+    background-image: url('pics/cover.jpg');
+    color: whitesmoke;
+}
+
+/* #endregion */
+/* #region Screen 2: Where To Find Me */
 
 /*noinspection CssOptimizeSimilarProperties*/
 #where-to-find-wrapper {
@@ -76,6 +168,7 @@ h1, h2 {
 }
 
 .social .fa-ul {
+    margin-top: 0.5em;
     margin-bottom: 0;
 }
 
@@ -92,52 +185,8 @@ h1, h2 {
     text-decoration: none;
 }
 
-.hide {
-    display: none;
-}
-
-.outer-container {
-    display: table; /* this is fine.gif */
-    width: 100%;
-    height: 100%;
-}
-
-.inner-container {
-    display: table-cell;
-    vertical-align: middle;
-    background-size: cover;
-}
-
-.inner-content, .inner-footer, .inner-header {
-    margin: auto;
-    text-align: center;
-}
-
-.inner-content p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.4;
-}
-
-.fixed-screen {
-    position: fixed;
-    min-height: 100%;
-    height: 100%; /* Mobile Firefox needs this */
-}
-
-.scroll-hint {
-    color: whitesmoke;
-    position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 8em; /* have to use something constant here because % is different for margin */
-    margin-top: -8em;
-    text-align: center;
-}
-
-.scroll-hint-inverted {
-    color: unset;
-}
+/* #endregion */
+/* #region Footer */
 
 .source-hint {
     color: whitesmoke;
@@ -162,46 +211,15 @@ h1, h2 {
     color: darkgrey;
 }
 
-.fire-emoji {
-    height: 40px;
-    width: 40px;
-    image-rendering: crisp-edges; /* thanks to the mysterious donor of this line!
-                                   (it doesn't really do anything any more with 
-                                   the pre-scaled image but we keep it for decoration) */
-}
-
-.click-hint:hover {
-    cursor: pointer;
-}
+/* #endregion */
+/* #region Parallax Effect */
 
 /***
-  screen definitions
+ ref: https://developers.google.com/web/updates/2016/12/performant-parallaxing
 ***/
 
-/*noinspection CssOptimizeSimilarProperties*/
-#landing {
-    background-color: #91a7cb; /* make loading a little smoother on mobile */
-    background-image: url('pics/cover.jpg');
-    color: whitesmoke;
-}
-
-@font-face {
-    font-family: 'Cabin';
-    src: url('fonts/Cabin/Cabin-VariableFont_wdth,wght.ttf');
-    font-weight: 100 1000;
-    font-stretch: 15% 151%;
-}
-
-@font-face {
-    font-family: 'Acme';
-    src: url('fonts/Acme/Acme-Regular.ttf');
-    font-weight: 400;
-}
-
-/* parallax, ref: https://developers.google.com/web/updates/2016/12/performant-parallaxing */
-
 .parallax-wrapper {
-    position: relative;
+    position: relative; /* take up space like normal but create stacking context */
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -240,9 +258,29 @@ h1, h2 {
     width: 100%;
 }
 
-/***
-  media queries
-***/
+/* #endregion */
+/* #region Global Utils */
+
+.shadowed {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.at {
+    /* the @ symbol looks very weird in Cabin, Acme looks similar enough */
+    font-family: 'Acme', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 2px;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.hide {
+    display: none;
+}
+
+/* #endregion */
+/* #region Overrides for larger screens */
 
 @media (min-width: 768px) {
     /* Keep content a little less wide on wider screens to make it seem roomier */
@@ -265,7 +303,7 @@ h1, h2 {
     }
 
     /* Increase font sizes since we have a lot more space on wider screens */
-    p {
+    p, i {
         font-size: 200%;
     }
 
@@ -279,6 +317,10 @@ h1, h2 {
 
     .social {
         font-size: 200%;
+    }
+
+    .social .fa-ul {
+        margin-top: 1em;
     }
 
     .cyber:hover {
@@ -303,7 +345,12 @@ h1, h2 {
     }
 }
 
+/* #endregion */
+/* #region Final corrections to overrides */
+
 .inner-content.parallax {
     /* override more spacious style here, we need this for proper centering */
     width: 100%;
 }
+
+/* #endregion */

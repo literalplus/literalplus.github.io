@@ -8,11 +8,8 @@
 
   <title>literalplus</title>
 
-  <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
   <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+  <link rel="stylesheet" href="normalize.css" type="text/css">
   <link rel="stylesheet" href="styles.css" type="text/css">
 
   <script src="fontawesome-free-5.15.1-web/attribution.js" async></script>
@@ -21,7 +18,7 @@
 <body>
 <div class="fixed-wrapper shadowed">
   <a id="top"></a>
-  <div class="outer-container fixed-screen">
+  <div class="fixed-screen">
     <!-- fixed background image for parallax effect -->
     <div id="landing" class="inner-container"></div>
   </div>
@@ -29,7 +26,7 @@
 <div class="parallax-wrapper" onclick="scrollToSelector('#parallax-top')">
   <a id="parallax-top"></a>
   <div class="inner-content parallax parallax-fast">
-    <h1 class="heading-and-pics">
+    <h1>
       <a href="https://github.com/googlei18n/noto-emoji/"
          title="fire emoji to indicate how lit i am courtesy of Google Noto">
         <img src="pics/emoji_u1f525_40px.png"
@@ -51,7 +48,7 @@
 </div>
 <div class="scroll-hint shadowed" onclick="scrollToSelector('#what-i-do-wrapper')">
   <p>Scroll down to see more</p>
-  <p class="glyphicon glyphicon-menu-down"></p>
+  <i class="fa fa-solid fa-chevron-down"></i>
 </div>
 <div class="cyberpage" id="what-i-do-wrapper">
   <a id="what-i-do"></a>
@@ -62,23 +59,20 @@
         A lot of my internet activity originates from
         <a href="https://twitter.com/literalplus" title="it's okay if you follow me no need to ask">Twitter</a>,
         but I also like to <a href="https://github.com/literalplus/" title="very best codes here yes">code</a>.
-        Complex and distributed (software) systems fascinate me. In particular, I am a big fan of
+        Complex and distributed systems fascinate me. In particular, I am a big fan of
         <a href="https://kubernetes.io/">Kubernetes</a>.
+      </p>
+      <p>
         I'm currently studying
         <span class="cyber"
               title="Boring people call it 'Software Engineering &amp; Internet Computing' but we're not boring are we">
-			cyber</span> at <a href="https://www.informatik.tuwien.ac.at">TU Wien</a>.
-      </p>
-      <p>
-        I used to be a developer and sysadmin at the German non-profit Minecraft server
+			  cyber</span> at <a href="https://www.informatik.tuwien.ac.at">TU Wien</a> and working at a <span class="cyber">software</span> company.
+        Many of my skills were acquired during my time at the German non-profit Minecraft server
         <a href="https://github.com/literalplus/expvp">Mi</a><!-- remove spaces
 		 --><a href="https://github.com/literalplus/xyc">no</a><!--
 		 --><a href="https://github.com/literalplus/minotopiacore">To</a><!--
-		 --><a href="https://bitbucket.org/literalplus/xlogin">pia</a>.
-        I also made
-        <a href="https://github.com/literalplus/commandblockerultimate">some</a>
-        <a href="https://github.com/literalplus/quietcord">useful</a> public plugins and
-        <a href="https://github.com/literalplus/">other</a> Free/Open Source Software.
+		 --><a href="https://bitbucket.org/literalplus/xlogin">pia</a> and working on
+        <a href="https://github.com/literalplus/">Free/Open Source Software</a>.
       </p>
       <p>
         I believe in freedom of information,
@@ -94,7 +88,7 @@
   </div>
 </div>
 <div class="scroll-hint scroll-hint-inverted shadowed" onclick="scrollToSelector('#where-to-find-wrapper')">
-  <p class="glyphicon glyphicon-menu-down"></p>
+  <i class="fa fa-solid fa-chevron-down"></i>
 </div>
 <div class="cyberpage shadowed" id="where-to-find-wrapper">
   <a id="contact-me"></a>
