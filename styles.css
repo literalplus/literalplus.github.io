@@ -254,7 +254,7 @@ h1, h2, p {
     position: absolute;
     transform: translateZ(5px) scale(0.375);
     margin-top: 15vh;
-    height: 300%;
+    /* height: 300%; */
     width: 100%;
 }
 
