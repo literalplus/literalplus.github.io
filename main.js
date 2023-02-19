@@ -47,7 +47,7 @@ class ParallaxHandler {
 
     onScroll() {
         this.onScrollInternal();
-        // console.info('scroll state', this.state);
+        console.info('scroll state', this.state);
     }
 
     onScrollInternal() {
@@ -73,8 +73,17 @@ class ParallaxHandler {
         if (this.state === SCROLLING_DOWN_DONE) {
             this.state = IN_COOLDOWN;
             this.previousScrollTop = 0;
-            scrollToSelector('#parallax-top'); // for if user returns back up
-            window.requestAnimationFrame(() => scrollToSelector('#what-i-do-wrapper'));
+            this.el.scrollTop = 0; // for if user returns back up
+
+            // Chrome doesn't seem to like scrollIntoView(), also
+            // not via various indirections. It works in a click handler
+            // though. Firefox supports it just fine but OK.
+            // if (!chrome) scrollToSelector('#what-i-do-wrapper');
+            const root = document.querySelector(':root');
+            root.scrollTo({
+                'top': this.el.offsetHeight,
+                'behavior': 'smooth',
+            });
             window.setTimeout(() => {
                 this.state = SCROLLING_DOWN_LOW;
             }, 2500);
