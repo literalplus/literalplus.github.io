@@ -46,7 +46,7 @@ class ParallaxHandler {
 
     onScroll() {
         this.onScrollInternal();
-        console.info('scroll state', this.state);
+        // console.info('scroll state', this.state);
     }
 
     onScrollInternal() {
@@ -115,7 +115,6 @@ class ParallaxHandler {
             this.el.scrollHeight - this.el.clientHeight - this.el.scrollTop
         );
         const progressFrac = scrollRoomLeftPx / this.scrollRoomAvailable;
-        console.info(progressFrac);
         // 0.25 is PERFECT in Firefox, but Chrome seems to compute
         // heights differently and needs more like 0.5 ...
         if (progressFrac < 0.25 || scrollRoomLeftPx < 1 /* px */) {
