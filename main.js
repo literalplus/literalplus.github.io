@@ -30,13 +30,13 @@ const IN_COOLDOWN = 'IN_COOLDOWN';
 class ParallaxHandler {
     constructor(el) {
         this.el = el;
+        this.offScreenRefEl = this.el.querySelector('#parallax-offscreen-ref');
         this.previousScrollTop = 0;
         this.state = SCROLLING_DOWN;
         this.scrollUpsInARow = 0;
     }
 
     attachListeners() {
-        this.scrollRoomAvailable = Math.abs(this.el.scrollHeight - this.el.clientHeight);
         // Once widely supported, we could also consider if the
         // 'scrollend' event could help us:
         // ref: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollend_event
@@ -110,15 +110,20 @@ class ParallaxHandler {
     }
 
     checkScrollingDown() {
-        // ref: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight#determine_if_an_element_has_been_totally_scrolled·
-        const scrollRoomLeftPx = Math.abs(
-            this.el.scrollHeight - this.el.clientHeight - this.el.scrollTop
-        );
-        const progressFrac = scrollRoomLeftPx / this.scrollRoomAvailable;
-        // 0.25 is PERFECT in Firefox, but Chrome seems to compute
-        // heights differently and needs more like 0.5 ...
-        if (progressFrac < 0.25 || scrollRoomLeftPx < 1 /* px */) {
+        const refBoundingBox = this.offScreenRefEl.getBoundingClientRect();
+        // This is incorrectly scaled by user zoom in iOS Safari
+        // Negative values mean 'above screen boundary'
+        const offScreenAmountPx = refBoundingBox['bottom'];
+        if (offScreenAmountPx < -30) {
             this.state = SCROLLING_DOWN_DONE;
+        } else { // fallback logic
+            // ref: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight#determine_if_an_element_has_been_totally_scrolled·
+            const scrollRoomLeftPx = Math.abs(
+                this.el.scrollHeight - this.el.clientHeight - this.el.scrollTop
+            );
+            if (scrollRoomLeftPx < 1 /* px */) {
+                this.state = SCROLLING_DOWN_DONE;
+            }
         }
     }
 }
