@@ -19,7 +19,6 @@ document.querySelectorAll('.scroll-hint')
 
 // --- Scrolling parallax is terminated early for smoother experience
 const SCROLLING_DOWN = 'SCROLLING_DOWN';
-const SCROLLING_DOWN_LOW = 'SCROLLING_DOWN_LOW';
 const SCROLLING_DOWN_DONE = 'SCROLLING_DOWN_DONE';
 const SCROLLING_UP_PENDING = 'SCROLLING_UP_PENDING';
 const SCROLLING_UP = 'SCROLLING_UP';
@@ -73,9 +72,8 @@ class ParallaxHandler {
         if (this.state === SCROLLING_DOWN_DONE) {
             this.state = IN_COOLDOWN;
             this.previousScrollTop = 0;
-            this.el.scrollTop = 0; // for if user returns back up
 
-            // Chrome doesn't seem to like scrollIntoView(), also
+            // Chrome doesn't seem to like scrollIntoView() here, also
             // not via various indirections. It works in a click handler
             // though. Firefox supports it just fine but OK.
             // if (!chrome) scrollToSelector('#what-i-do-wrapper');
@@ -84,8 +82,14 @@ class ParallaxHandler {
                 'top': this.el.offsetHeight,
                 'behavior': 'smooth',
             });
+            // ^ Also, this doesn't hit the spot exactly in Chrome, it seems
+            // like the user's scroll events are queded during smooth scrolling,
+            // which Firefox (imo correctly) ignores them.
             window.setTimeout(() => {
-                this.state = SCROLLING_DOWN_LOW;
+                this.el.scrollTop = 0; // for if user returns back up
+            }, 500);
+            window.setTimeout(() => {
+                this.state = SCROLLING_DOWN;
             }, 2500);
         }
     }
@@ -111,10 +115,10 @@ class ParallaxHandler {
             this.el.scrollHeight - this.el.clientHeight - this.el.scrollTop
         );
         const progressFrac = scrollRoomLeftPx / this.scrollRoomAvailable;
-        if (progressFrac < 0.25 && this.state !== SCROLLING_DOWN_LOW) {
-            // LOW is set after cooldown due to reaching end
-            this.state = SCROLLING_DOWN_DONE;
-        } else if (scrollRoomLeftPx < 1 /* px */) {
+        console.info(progressFrac);
+        // 0.25 is PERFECT in Firefox, but Chrome seems to compute
+        // heights differently and needs more like 0.5 ...
+        if (progressFrac < 0.25 || scrollRoomLeftPx < 1 /* px */) {
             this.state = SCROLLING_DOWN_DONE;
         }
     }
