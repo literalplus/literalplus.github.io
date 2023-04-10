@@ -62,5 +62,6 @@ Pictures: (`pics/` directory)
  * `cyber_plain.png` - [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) Cyber picture by <a href="https://cyber.equipment/">fnordeingang e.V.</a> (If you need cyber, they got cyber, can recommend, already got ~120m of cyber there)
  * `emoji_u1f525.png` - Fire emoji from [Google Noto Emoji](https://github.com/googlefonts/noto-emoji), licensed under the [Apache License](https://github.com/googlefonts/noto-emoji#license)
  * `emoji_u1f525.png` - that picture, scaled to 40x40px to prevent blurry and inconsistent scaling between browsers. (`image-rendering: crisp-edges;` somewhat works but still doesn't look quite as nice)
+ * If you're looking for a picture from one of my error pages: These are all from [Pexels](https://pexels.com) and every image is directly linked to the source, which indicates the photographer and the full-resolution download (just click on the image on the error page).
 
 All trademarks belong to their respective owners.
