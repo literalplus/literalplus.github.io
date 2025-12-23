@@ -35,7 +35,7 @@ Satisfied Customer Reviews
 "n1 💪"
 — [@GoTeufelchen](https://twitter.com/go_teufelchen)
 
-pls send me ur reviews on the fediverse to be included here 💖
+pls send me ur reviews on the blue blue sky (or whatever platform you prefer !) to be included here 💖
 
 License
 ========
